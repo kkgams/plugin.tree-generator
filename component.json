@@ -1,0 +1,13 @@
+{
+  "name": "plugin.tree-generator",
+  "slug": "tree-generator",
+  "source": "treegen",
+  "world": "generator",
+  "binding": null,
+  "members": [
+    "treegen"
+  ],
+  "artifacts": [
+    "plugin.tree-generator.wasm"
+  ]
+}
