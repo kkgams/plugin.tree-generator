@@ -122,11 +122,11 @@
     "LICENSES/wasmtime-Apache-LLVM.txt": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
     "LICENSES/wit-bindgen-Apache.txt": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
     "LICENSES/wit-bindgen-MIT.txt": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
-    "LICENSING.md": "9c90a7d909f589c226e600b2cd66f551d7769ba9de2b67fc2ee5e9d751de256e",
+    "LICENSING.md": "7d6a90dc1c2980a26c15beff2fce81ebf6b06b7fba0238990cdcde1725ce0272",
     "Makefile": "bebe6c97ccd2d043a593ba5e1a2b27a0c4ff036f2ece06745806deead7d257bf",
-    "README.md": "6af5ab2f72963b339c5c53e584afa1a041c79027af6c33ebd906303321802c60",
-    "SOURCE-INPUTS.json": "bcd422afbce0690b7f6f9472e8d59e607f8b8ad174ac1c27adc4774486bd583a",
-    "THIRD-PARTY-REVIEW.md": "e024e423b9da528794df2279c94c09152cf4efca75db7576640a00f25dcb3eae",
+    "README.md": "6784202f3feec428f04884cfa64703443e8929f69e010cc6ae676dcbc53eb79c",
+    "SOURCE-INPUTS.json": "dedc7bb5ab96edcb60f44401a97dd5ebfb570a5ebe9bc0ff2f850f5b6b680427",
+    "THIRD-PARTY-REVIEW.md": "be7712944495ee2e33589e9507cdb3e7fa92960097a19be1a6e530e3688a9f5d",
     "THIRD-PARTY-SOURCE.json": "600fec4753ccafee9320037901ce5549b38b109a6de57091c9d7111db31b2235",
     "component.json": "0472472328fa86de104d0c1cd09c8631953310def13652a80d0c689a7f849e83",
     "flake.lock": "3adbe3447e662145dd50a383489f62e7bfbe16996281e113b1fbac347eca3eae",
@@ -263,7 +263,7 @@
     "third_party/wasi-0.2.0/sockets/wit/udp-create-socket.wit": "058da3ade225a22ae9f7329453a51cf55174f3253b7a4163d10bc46bc7c53b85",
     "third_party/wasi-0.2.0/sockets/wit/udp.wit": "411998b320d08fce10400c840f0ca0ebef49c5a4fb13f94011bbce2bbd5972fc",
     "third_party/wasi-0.2.0/sockets/wit/world.wit": "9281c12b9611117e98674eb3f00bd9c4eb2e49f1386f0d6173b9c88181180d12",
-    "version.txt": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+    "version.txt": "71015c979ccb0fc8a0be7ca0ae83046ab045cdc2c8faa09fb2f0f7e440f9b4a6"
   },
   "findings": [
     "QOI C: Dominic Szablewski (2021), MIT. Copied Go QOI names Xavier-Fr\u00e9d\u00e9ric Moulet; full independent upstream MIT text retained even when the helper is source-distributed but not linked. No assertion of an original port revision.",
@@ -397,9 +397,43 @@
       "sdk/go/tree/tree.go"
     ]
   },
+  "release_0_2_1": {
+    "baseline_commit": "1aca2293770aefc5af8cff046e3a458e3c83b980",
+    "boundary": "Only distribution version and approval-status documentation, exact inventories, and NOTICE evidence suffix. License bodies, NOTICE body, third-party source, dependencies, API/WIT, tests, workflow guards and verification exclusions unchanged.",
+    "changed_inputs": {
+      "LICENSING.md": {
+        "after": "7d6a90dc1c2980a26c15beff2fce81ebf6b06b7fba0238990cdcde1725ce0272",
+        "before": "9c90a7d909f589c226e600b2cd66f551d7769ba9de2b67fc2ee5e9d751de256e"
+      },
+      "README.md": {
+        "after": "6784202f3feec428f04884cfa64703443e8929f69e010cc6ae676dcbc53eb79c",
+        "before": "6af5ab2f72963b339c5c53e584afa1a041c79027af6c33ebd906303321802c60"
+      },
+      "SOURCE-INPUTS.json": {
+        "after": "dedc7bb5ab96edcb60f44401a97dd5ebfb570a5ebe9bc0ff2f850f5b6b680427",
+        "before": "bcd422afbce0690b7f6f9472e8d59e607f8b8ad174ac1c27adc4774486bd583a"
+      },
+      "THIRD-PARTY-REVIEW.md": {
+        "after": "be7712944495ee2e33589e9507cdb3e7fa92960097a19be1a6e530e3688a9f5d",
+        "before": "e024e423b9da528794df2279c94c09152cf4efca75db7576640a00f25dcb3eae"
+      },
+      "version.txt": {
+        "after": "71015c979ccb0fc8a0be7ca0ae83046ab045cdc2c8faa09fb2f0f7e440f9b4a6",
+        "before": "1f930dd1f133c1f97a94fe3acb8db34372cf4c01ffdb2b3ff4ca72f9494121e9"
+      }
+    },
+    "date": "2026-10-12",
+    "history": "Existing audit fields and documentation_cleanup retained verbatim as historical records, not current manual approval blockers.",
+    "owner_instruction": "Licensing/checksums already prepared; remove pending manual checksum/license/hosted-review approvals; authorize local commits and annotated tags. No pushes, publications, or approval-variable changes in this preparation.",
+    "previous_evidence_sha256": "e30f124a77e1806e8f0c082842b431058149390ae9a87909fa3a7dc6cd2d89ce",
+    "previous_notice_sha256": "90590fe5cc17c4be211cad31296f9a543fa3f793bf1339825770c7c598906106",
+    "previous_source_inputs_sha256": "bcd422afbce0690b7f6f9472e8d59e607f8b8ad174ac1c27adc4774486bd583a",
+    "refresh_script_sha256": "2641b0de5efc2d513d8cb1df65f33b022f74136ff3f4d9f3ce74ac157e8a114f",
+    "validation": "Hosted execution and absent runtime/platform coverage not certified. Technical fail-closed digest, artifact and immutable-publication gates remain enforced."
+  },
   "repository": "plugin.tree-generator",
   "schema": 1,
-  "scope": "historical third-party source audit plus bounded documentation cleanup; no new build or audit executed",
+  "scope": "preserved historical audit and cleanup plus bounded 0.2.1 release preparation; no new legal audit",
   "shipped_host_source_files": [],
   "source_comparison_exclusions": {
     "directories": [
